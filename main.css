@@ -1,7 +1,48 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    }
 
 body {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 14px;
+    margin: 8px;
+}
+
+
+.mainp{
+
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+}
+.item1 {
+    background: #7dc5ed;
+    flex-basis: 100%;
+}
+.item2 {
+    background: #bb6fad;
+    flex-basis: 50%;
+}
+.item3 {
+    background: #6560ab;
+    flex-basis: 50%;
+}
+@media (max-width: 812px) {
+    .flex-container {
+        flex-flow: row wrap;
+    }
+    .flex-item-1 {
+        flex-basis: 50%;
+    }
+    .flex-item-2 {
+        flex-basis: 50%;
+    }
+    .flex-item-3 {
+        flex-basis: 50%;
+    }
 }
