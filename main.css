@@ -21,7 +21,13 @@ img {
     height: auto;
   }
 
-
+  #footer {
+    text-align: center;/* Aligns text to the left */
+    padding: 10px;
+    margin-top: 36px; /* Pushes footer down */
+    width: 100%; /* Ensures footer spans the full width */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
 .container {
     max-width: 812px;
     margin: 0 auto; /* Centers the container  */
@@ -48,15 +54,11 @@ img {
         padding-top: 36px;
         padding-right: 36px;
     }
-    
+    #footer {
+        text-align: left;
+    }
    
   }
-  #footer {
-    text-align: center; /* Aligns text to the left */
-    padding: 10px;
-    margin-top: 36px; /* Pushes footer down */
-    width: 100%; /* Ensures footer spans the full width */
-    box-sizing: border-box; /* Ensures padding and border are included in width */
-}
+ 
 
   
