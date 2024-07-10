@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     }
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
 
 body {
     font-family: "Roboto Mono", monospace;
@@ -39,10 +44,19 @@ img {
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
     .item {
-      width: calc(100% / 2); /* Each item takes up 1/2 of the container */
-      padding-top: 36px;
-      padding-right: 36px;
-      
+        width: calc(50% - 36px); /* Each item takes up 50% width minus padding */
+        padding-top: 36px;
+        padding-right: 36px;
     }
+    
    
   }
+  #footer {
+    text-align: center; /* Aligns text to the left */
+    padding: 10px;
+    margin-top: 36px; /* Pushes footer down */
+    width: 100%; /* Ensures footer spans the full width */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+  
