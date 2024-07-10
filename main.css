@@ -10,39 +10,30 @@ body {
     margin: 8px;
 }
 
-
+img {
+    width: 100%;
+    height: auto;
+  }
 .mainp{
 
 }
 
 .container {
+    max-width: 812px;
+    /* margin: 0 auto; Centers the container */
     display: flex;
-    flex-flow: column wrap;
-    height: 100%;
-}
-.item1 {
-    background: #7dc5ed;
-    flex-basis: 100%;
-}
-.item2 {
-    background: #bb6fad;
-    flex-basis: 50%;
-}
-.item3 {
-    background: #6560ab;
-    flex-basis: 50%;
-}
-@media (max-width: 812px) {
-    .flex-container {
-        flex-flow: row wrap;
+    flex-wrap: wrap; /* Allows items to wrap onto new lines */
+  }
+  
+  .item {
+    width: 100%; /* Each item takes up 1/3 of the container */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    padding: 10px;
+  }
+  
+  /* Media query for screens wider than 812px */
+  @media (min-width: 813px) {
+    .item {
+      width: calc(100% / 2); /* Each item takes up 1/2 of the container */
     }
-    .flex-item-1 {
-        flex-basis: 50%;
-    }
-    .flex-item-2 {
-        flex-basis: 50%;
-    }
-    .flex-item-3 {
-        flex-basis: 50%;
-    }
-}
+  }
