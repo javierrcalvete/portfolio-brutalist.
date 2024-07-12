@@ -62,7 +62,7 @@ img {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap onto new lines */
     padding: 10px;
-    background-color: beige;
+    
   }
   .header {
     width: 100%;
@@ -96,10 +96,10 @@ img {
         padding-right: 36px;
     }      */
     .header{
-      border:1px solid black;
-      padding: 10px;
-    
-      margin-top: 10px;
+        border:1px solid black;
+    padding: 10px;
+  
+    margin-top: 10px;
     }
     #footer {                 
         text-align: left;
