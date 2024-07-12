@@ -59,40 +59,51 @@
             <!-- Toggle button for Code 2 -->
             <button class="toggle-btn" data-target="code2">Toggle Code 2</button>
             <div class="code" id="code2">
-                import os<br>
-                import random<br>
-                import matplotlib.pyplot as plt<br><br>
+                <p>#Creating a function to visualize the images</p><br>
+
+                <p>def visualize<em>images(path, num</em>images=5):</p>
+
+                <pre><code># Get a list of image filenames
+                image_filenames = [f for f in os.listdir(path) 
+                </code></pre>
+
+                <p>if os.path.isfile(os.path.join(path, f))]</p>
+
+                <pre><code>if not image_filenames:
+                    raise ValueError("No images found in the specified path")
                 
-                def visualize_images(path, num_images=5):<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;# Get a list of image filenames<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;image_filenames = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]<br><br>
+                # Select random images
+                selected_images = random.sample(image_filenames, 
+                </code></pre>
+
+                <p>min(num<em>images, len(image</em>filenames)))</p>
+
+                <pre><code># Create a figure and axes
+                fig, axes = plt.subplots(1, num_images, figsize=(15, 3), 
+                </code></pre>
+
+                <p>facecolor='white')</p>
+
+                <pre><code># Display each image
+                for i, image_filename in enumerate(selected_images):
+                    # Load image
+                    image_path = os.path.join(path, image_filename)
+                    image = plt.imread(image_path)
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;if not image_filenames:<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise ValueError("No images found in the specified path")<br><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;# Select random images<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;selected_images = random.sample(image_filenames, min(num_images, len(image_filenames)))<br><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;# Create a figure and axes<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;fig, axes = plt.subplots(1, num_images, figsize=(15, 3), facecolor='white')<br><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;# Display each image<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;for i, image_filename in enumerate(selected_images):<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Load image<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image_path = os.path.join(path, image_filename)<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image = plt.imread(image_path)<br><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Display image<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axes[i].imshow(image)<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axes[i].axis('off')<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axes[i].set_title(image_filename)  # Set image filename as title<br><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;# Adjust layout and display<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.tight_layout()<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()<br><br>
-                
-                # Example usage:<br>
-                # visualize_images('/path/to/your/images/direc
+                    # Display image
+                    axes[i].imshow(image)
+                    axes[i].axis('off')
+                    axes[i].set_title(image_filename)  
+                </code></pre>
+
+                <h1>Set image filename as title</h1>
+
+                <pre><code># Adjust layout and display
+                plt.tight_layout()
+                plt.show()
+                </code></pre>
+
+
             </div>
             <a class="item" href="img/item1/image 17.png"><img src="img/item1/image 17.png" alt="Item 1"></a>
         </div>

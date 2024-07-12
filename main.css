@@ -89,13 +89,13 @@ img {
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
     /* this only affect the index page with the class index-page */
-     .index-page {
-        width: calc(50% - 36px); /* Each item takes up 50% width minus padding */
+     /* .index-page {
+        width: calc(50% - 36px); 
         padding-top: 36px;
         padding-right: 36px;
-    } 
+    }      */
 
-    #footer {
+    #footer {                 
         text-align: left;
     }
    
