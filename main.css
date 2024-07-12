@@ -28,7 +28,24 @@ img {
     /* transform: scale(1.1);  */
    
 }
-
+ /* Optional: Styling for the toggle buttons */
+ .toggle-btn {
+  padding: 10px 20px;
+  /* background-color: #007bff; */
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.code {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  display: none; /* Hide the code initially */
+}
+.code.active {
+  display: block; /* Show the code when active class is applied */
+}
   #footer {
     text-align: center;/* Aligns text to the left */
     padding: 10px;
@@ -63,11 +80,11 @@ img {
   
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
-    .item {
-        width: calc(50% - 36px); /* Each item takes up 50% width minus padding */
+    /* .item {
+        width: calc(50% - 36px); Each item takes up 50% width minus padding
         padding-top: 36px;
         padding-right: 36px;
-    }
+    } */
     #footer {
         text-align: left;
     }
@@ -75,4 +92,4 @@ img {
   }
  
 
-  
+ 
