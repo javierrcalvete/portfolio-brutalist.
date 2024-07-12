@@ -22,11 +22,34 @@
             <!-- Toggle button for Code 1 -->
             <button class="toggle-btn" data-target="code1">Toggle Code 1</button>
             <div class="code" id="code1">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloremque, ducimus ex totam
-                voluptas
-                vitae magni eum ut, porro, expedita nesciunt reprehenderit. Ipsum labore, sapiente modi quisquam
-                suscipit
-                veniam fugiat.
+
+                <p> # For data manipulation
+                    import numpy as np
+                    import pandas as pd <br>
+
+                    # For data visualization
+                    import matplotlib.pyplot as plt
+                    import seaborn as sns<br>
+
+                    # Ingore the warnings
+                    import warnings
+                    warnings.filterwarnings('ignore')<br>
+
+                    # DL Libraries
+                    import tensorflow
+                    from tensorflow import keras
+                    from tensorflow.keras.models import Sequential
+                    from tensorflow.keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout,
+                    BatchNormalization,
+                    AveragePooling2D
+                    from tensorflow.keras.utils import image_dataset_from_directory<br>
+
+                    # Other libraries
+                    import os
+                    import random</p>
+
+
+
             </div>
 
             <a class="item" href="img/item1/image 16.png"><img src="img/item1/image 16.png" alt="Item 1"></a>
@@ -36,13 +59,42 @@
             <!-- Toggle button for Code 2 -->
             <button class="toggle-btn" data-target="code2">Toggle Code 2</button>
             <div class="code" id="code2">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloremque, ducimus ex totam
-                voluptas
-                vitae magni eum ut, porro, expedita nesciunt reprehenderit. Ipsum labore, sapiente modi quisquam
-                suscipit
-                veniam fugiat.
+                import os<br>
+                import random<br>
+                import matplotlib.pyplot as plt<br><br>
+                
+                def visualize_images(path, num_images=5):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Get a list of image filenames<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;image_filenames = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]<br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;if not image_filenames:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise ValueError("No images found in the specified path")<br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;# Select random images<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;selected_images = random.sample(image_filenames, min(num_images, len(image_filenames)))<br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;# Create a figure and axes<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;fig, axes = plt.subplots(1, num_images, figsize=(15, 3), facecolor='white')<br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;# Display each image<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for i, image_filename in enumerate(selected_images):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Load image<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image_path = os.path.join(path, image_filename)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image = plt.imread(image_path)<br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Display image<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axes[i].imshow(image)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axes[i].axis('off')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axes[i].set_title(image_filename)  # Set image filename as title<br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;# Adjust layout and display<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.tight_layout()<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()<br><br>
+                
+                # Example usage:<br>
+                # visualize_images('/path/to/your/images/direc
             </div>
-            <a class="item" href="img/item1/image 16.png"><img src="img/item1/image 16.png" alt="Item 1"></a>
+            <a class="item" href="img/item1/image 17.png"><img src="img/item1/image 17.png" alt="Item 1"></a>
         </div>
 
         <div class="index">
