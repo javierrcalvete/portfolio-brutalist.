@@ -20,21 +20,21 @@ img {
     width: 100%;
     height: auto;
   }
-  /* .item img {
+  .item img {
     transition: transform 0.3s ease;
-} */
-
-.item img:hover {
-    /* transform: scale(1.1);  */
-   
 }
+
+/* .item img:hover { */
+    /* transform: scale(1.1);  */
+    /* box-shadow: 5px 5px; */
+/* } */
  /* Optional: Styling for the toggle buttons */
  .toggle-btn {
   padding: 10px 20px;
   /* background-color: #007bff; */
   color: black;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-bottom: 10px;
 }
 .code {
@@ -68,7 +68,6 @@ img {
     width: 100%;
     box-sizing: border-box;
     text-align: left;
-    
     /* background-color: #f0f0f0; */
   }
   .item {
@@ -98,7 +97,8 @@ img {
     .header{
         border:1px solid black;
     padding: 10px;
-  
+    box-shadow: 5px 5px ;
+
     margin-top: 10px;
     }
     #footer {                 
