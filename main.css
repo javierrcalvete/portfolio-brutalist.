@@ -89,7 +89,7 @@ img {
   margin-top: 36px;
   
   }
-  
+ 
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
     /* this only affect the index page with the class index-page */
