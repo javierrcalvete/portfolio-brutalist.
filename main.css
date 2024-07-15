@@ -45,7 +45,7 @@ img {
   margin-bottom: 10px;
   display: none; /* Hide the code initially */
   background-color: rgb(244, 244, 244);
-
+  
 }
 .code.active {
   display: block; /* Show the code when active class is applied */
@@ -66,6 +66,7 @@ img {
     
     
   }
+  
   .header {
     width: 100%;
     box-sizing: border-box;
@@ -89,7 +90,7 @@ img {
   margin-top: 36px;
   
   }
- 
+
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
     /* this only affect the index page with the class index-page */
