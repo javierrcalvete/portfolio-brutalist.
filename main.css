@@ -14,23 +14,27 @@ body {
     font-size: 14px;
    background-color: beige;
    
+   
 }
 
 img {
     width: 100%;
     height: auto;
+   
   }
    .item img {
 
-    transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */    
+    transition: filter 0.2s ease-in-out; /* Add a smooth transition effect */    
 } 
 
 .img-container img:hover {
     /* transform: scale(1.1);  */
-    filter: grayscale(100%); /* Apply grayscale filter on hover */
-}
+    /* filter: grayscale(100%);  */
+  
+    filter: grayscale(100%) blur(1px);
+  }
 
-}
+
  /* Optional: Styling for the toggle buttons */
  .toggle-btn {
   padding: 10px 20px;
@@ -102,7 +106,7 @@ img {
         padding-right: 36px;
     }      */
     .header{
-        border:1px solid black;
+    border:1px solid black;
     padding: 10px;
     box-shadow: 5px 5px #c4c4ae;
 
