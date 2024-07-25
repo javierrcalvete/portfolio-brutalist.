@@ -20,15 +20,17 @@ img {
     width: 100%;
     height: auto;
   }
-  /* .item img {
-    transition: transform 0.3s ease;
-    
-} */
+   .item img {
 
-/* .item img:hover { */
+    transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */    
+} 
+
+.img-container img:hover {
     /* transform: scale(1.1);  */
-    /* box-shadow: 5px 5px; */
-/* } */
+    filter: grayscale(100%); /* Apply grayscale filter on hover */
+}
+
+}
  /* Optional: Styling for the toggle buttons */
  .toggle-btn {
   padding: 10px 20px;
