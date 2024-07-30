@@ -52,6 +52,7 @@ img {
   margin-bottom: 10px;
   display: none; /* Hide the code initially */
   background-color: rgb(244, 244, 244);
+  overflow: auto;
   
 }
 .code.active {
