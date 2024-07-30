@@ -101,6 +101,15 @@ img {
   margin-top: 36px;
   
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: beige;
+    padding: 10px;
+    padding-left: 0px;
+  }
+ 
 
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
