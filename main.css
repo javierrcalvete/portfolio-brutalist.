@@ -119,16 +119,25 @@ img {
   width: 24px;   /* Adjust width as needed */
   height: 24px;  /* Adjust height as needed */
 }
+/* Basic button reset */
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Removes the default link color, inherits from parent */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  border: none; /* Removes default border */
+  font: inherit; /* Ensures font styles match the parent element */
+}
 
+a:hover {
+  color: grey;/*  Example of custom hover color */
+  text-decoration: underline; /* Example of custom hover underline */
+  /*filter: blur(0.5px);  Adjust the blur value as needed */
+}
 
   /* Media query for screens wider than 812px */
   @media (min-width: 813px) {
-    /* this only affect the index page with the class index-page */
-     /* .index-page {
-        width: calc(50% - 36px); 
-        padding-top: 36px;
-        padding-right: 36px;
-    }      */
+   
    .container{
    padding: 0px;
    }
@@ -136,8 +145,17 @@ img {
         text-align: left;
         padding-left: 0;
     }
+    body {
+     
+      font-size: 16px;
+    
    
+     
   }
+  
+
+  }
+  
  
 
  
